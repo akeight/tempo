@@ -1,80 +1,61 @@
-## Tempo
+# Tempo
 
-A smarter way to keep your home in rhythm.
+**A smarter way to keep your home in rhythm.**
 
-Tempo is a native iOS app that learns how a household actually operates and surfaces what needs attention—without turning home life into an endless checklist.
+Tempo is a native iOS app designed to reduce the mental load of keeping a home running. It combines structured household routines with personalized recommendations, quick resets, and an ADHD-friendly recovery mode for when life gets chaotic.
 
-Rather than relying only on rigid recurring schedules, Tempo learns to from task-completion patterns to predict when household tasks are likely due.
+## How It Works
 
-### The Idea
+Tempo is built around three modes:
 
-Household routines aren’t always predictable.
+### Rhythm
+The everyday experience. Tempo organizes household maintenance across daily, weekly, monthly, and seasonal routines while learning how often tasks actually need attention in your home.
 
-Instead of:
+### Reset
+For when you have time and want to make progress.
 
-Vacuum — Every Tuesday
+Choose a time:
 
-Tempo aims to learn from actual behavior and surface:
+**15 min · 30 min · 60 min**
 
-Vacuum
-Usually done around now.
+Tempo builds a focused reset based on what currently matters. Voice input can add context like:
 
-The goal is to reduce the mental load of remembering and scheduling routine household work while keeping recommendations simple and understandable.
+> “People are coming over in 45 minutes.”
 
-### Core Experience
+### SOS
+For when the routine has completely fallen apart.
 
-Tempo is designed around a simple loop:
+SOS pauses the normal schedule, helps identify the backlog, and breaks recovery into manageable sessions until the home is back in rhythm.
 
-Create → Complete → Learn → Recommend → Repeat
+## Design Principles
 
-The initial version will focus on:
+- Reduce decisions, not just organize tasks
+- Show the next action instead of the entire backlog
+- Celebrate progress without streaks or guilt
+- Adapt to available time and capacity
+- Make it clear when you're done
+- Keep intelligence understandable and useful
 
-* Creating and organizing household tasks
-* Quickly marking tasks complete
-* Building completion history
-* Learning recurring patterns
-* Surfacing tasks that likely need attention
-* Explaining recommendations in human-friendly language
+## Tech
 
-### Machine Learning
+- Swift
+- SwiftUI
+- SwiftData
+- Core ML
+- Python / scikit-learn
+- Speech recognition
+- Figma
 
-Tempo will explore lightweight classical machine-learning models trained on household task history.
+## Intelligence
 
-Potential signals include completion intervals, time since last completion, day-of-week patterns, task categories, and previous recommendations.
+Tempo combines a structured household curriculum with completion history, household patterns, and current context.
 
-Models will initially be developed in Python and deployed on-device using Core ML.
+Machine learning will help personalize task timing over time while predictable routines remain rule-based.
 
-The goal isn’t to build the most complicated model possible—it’s to determine whether a small, interpretable model can make genuinely useful predictions.
+The goal isn't ML everywhere. We’re helping Tempo understand **what matters right now**.
 
-### Tech Stack
+## Status
 
-* Swift
-* SwiftUI
-* SwiftData
-* Core ML
-* Python
-* scikit-learn
-* Figma
+🚧 **Early development**
 
-### Design Principles
-
-Calm over clutter.
-Surface what matters instead of presenting an endless checklist.
-
-Rhythm over rigid schedules.
-Learn from how a household actually behaves.
-
-Explainable over mysterious.
-Translate predictions into understandable recommendations.
-
-Private by default.
-Keep household data and ML inference on-device whenever practical.
-
-### Status
-**Early development**
-
-Currently defining the core experience, interaction model, and ML approach before building the first SwiftUI prototype.
-
-⸻
-
-Tempo is an exploration of mobile engineering, product design, and on-device machine learning.
+Currently designing the core mobile experience and building the first Rhythm → Reset → Learn loop.
